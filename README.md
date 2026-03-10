@@ -1,4 +1,4 @@
-# 🧠 LeetCode Solutions
+# LeetCode Solutions
 
 Personal collection of LeetCode problem solutions written in **C#**.
 
@@ -8,7 +8,7 @@ Personal collection of LeetCode problem solutions written in **C#**.
 
 ---
 
-## 📁 Structure
+## Structure
 ```
 LeetcodeSolutions/
 ├── 88_MergeSortedArray/
@@ -17,7 +17,7 @@ LeetcodeSolutions/
 
 ---
 
-## ✅ Solutions
+## Solutions
 
 | # | Problem | Difficulty | Language | Runtime | Memory | Notes |
 |---|---------|------------|----------|---------|--------|-------|
