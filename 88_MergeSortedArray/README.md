@@ -56,8 +56,10 @@ Output: [1]
 | Space | O(1) |
 ```
 
-**2. Your folder structure will then look like:**
+```
+## Folder Structure
 ```
 88_MergeSortedArray/
-├── README.md       ← problem statement & approach
-└── Solution88.cs   ← your code
+├── README.md       <- problem statement & approach
+└── Solution88.cs  <- your code
+```
