@@ -7,7 +7,7 @@
 
 ---
 
-## 📄 Problem Statement
+## Problem Statement
 
 You are given two integer arrays `nums1` and `nums2`, sorted in non-decreasing order, and two integers `m` and `n`, representing the number of elements in `nums1` and `nums2` respectively.
 
@@ -17,7 +17,7 @@ Merge `nums2` into `nums1` as one sorted array in non-decreasing order.
 
 ---
 
-## 📊 Examples
+## Examples
 
 **Example 1:**
 ```
@@ -39,7 +39,7 @@ Output: [1]
 
 ---
 
-## 💡 Approach
+## Approach
 
 - Use two pointers starting from the **end** of both arrays
 - Compare and place the larger element at the back of `nums1`
@@ -48,7 +48,7 @@ Output: [1]
 
 ---
 
-## ⏱️ Complexity
+## Complexity
 
 | | Complexity |
 |---|---|
