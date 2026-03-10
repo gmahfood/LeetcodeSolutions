@@ -25,7 +25,7 @@ LeetcodeSolutions/
 
 ---
 
-## 🔍 Approach Highlights
+## Approach Highlights
 
 ### #88 — Merge Sorted Array
 - **Strategy:** Two-pointer traversal starting from the **end** of both arrays
