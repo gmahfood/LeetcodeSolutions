@@ -1,7 +1,7 @@
 # LeetCode/NeetCode Solutions
 Personal collection of LeetCode problem solutions written in **C#**.
 
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-2-brightgreen)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-3-brightgreen)
 ![Language](https://img.shields.io/badge/Language-C%23-blue)
 ![Runtime](https://img.shields.io/badge/Best%20Runtime-0ms%20%7C%20Beats%20100%25-gold)
 
@@ -14,7 +14,8 @@ LeetcodeSolutions/
 │   └── 88_MergeSortedArray/
 │       └── Solution88.cs
 ├── neetcode/
-│   └── ContainsDuplicate.cs
+│   ├── ContainsDuplicate.cs
+│   └── ValidAnagram.cs
 ```
 
 ---
@@ -30,6 +31,7 @@ LeetcodeSolutions/
 | # | Problem | Difficulty | Language | Notes |
 |---|---------|------------|----------|-------|
 | 1 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | 🟢 Easy | C# | HashSet |
+| 2 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | 🟢 Easy | C# | Dictionary frequency count |
 
 ---
 
@@ -43,9 +45,15 @@ LeetcodeSolutions/
 
 ### #1 — Contains Duplicate
 - **Strategy:** HashSet to track previously seen numbers
-- Loop through array — if number already in set, duplicate found
+- Loop through array, if number already in set a duplicate was found
 - Time complexity: **O(n)** — single pass
 - Space complexity: **O(n)** — worst case store every element
+
+### #2 — Valid Anagram
+- **Strategy:** Dictionary to count letter frequencies in s, then subtract frequencies from t
+- If all counts balance to zero both strings use the exact same letters
+- Time complexity: **O(n)** — loop through both strings once
+- Space complexity: **O(n)** — store each unique character in the dictionary
 
 ---
 
