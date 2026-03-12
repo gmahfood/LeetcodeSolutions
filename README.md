@@ -1,7 +1,7 @@
 # LeetCode/NeetCode Solutions
 Personal collection of LeetCode problem solutions written in **C#**.
 
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-4-brightgreen)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-5-brightgreen)
 ![Language](https://img.shields.io/badge/Language-C%23-blue)
 ![Runtime](https://img.shields.io/badge/Best%20Runtime-0ms%20%7C%20Beats%20100%25-gold)
 
@@ -16,7 +16,8 @@ LeetcodeSolutions/
 ├── neetcode/
 │   ├── ContainsDuplicate.cs
 │   ├── ValidAnagram.cs
-│   └── TwoSum.cs
+│   ├── TwoSum.cs
+│   └── GroupAnagrams.cs
 ```
 
 ---
@@ -34,6 +35,7 @@ LeetcodeSolutions/
 | 1 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | 🟢 Easy | C# | HashSet |
 | 2 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | 🟢 Easy | C# | Dictionary frequency count |
 | 3 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | C# | Dictionary one pass |
+| 4 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | 🟡 Medium | C# | Dictionary sorted signature |
 
 ---
 
@@ -62,6 +64,12 @@ LeetcodeSolutions/
 - For every number calculate its complement (target minus current) and check if already seen
 - Time complexity: **O(n)** — single pass through the array
 - Space complexity: **O(n)** — worst case store every element in the dictionary
+
+### #4 — Group Anagrams
+- **Strategy:** Dictionary using sorted word as key to group all anagrams together
+- Sorting each word gives a shared signature that all anagrams of that word produce
+- Time complexity: **O(n * k log k)** — n words each sorted in k log k time
+- Space complexity: **O(n)** — store every word in the dictionary
 
 ---
 
