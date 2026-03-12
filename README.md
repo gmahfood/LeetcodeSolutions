@@ -1,7 +1,7 @@
 # LeetCode/NeetCode Solutions
 Personal collection of LeetCode problem solutions written in **C#**.
 
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-3-brightgreen)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-4-brightgreen)
 ![Language](https://img.shields.io/badge/Language-C%23-blue)
 ![Runtime](https://img.shields.io/badge/Best%20Runtime-0ms%20%7C%20Beats%20100%25-gold)
 
@@ -15,7 +15,8 @@ LeetcodeSolutions/
 │       └── Solution88.cs
 ├── neetcode/
 │   ├── ContainsDuplicate.cs
-│   └── ValidAnagram.cs
+│   ├── ValidAnagram.cs
+│   └── TwoSum.cs
 ```
 
 ---
@@ -32,6 +33,7 @@ LeetcodeSolutions/
 |---|---------|------------|----------|-------|
 | 1 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | 🟢 Easy | C# | HashSet |
 | 2 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | 🟢 Easy | C# | Dictionary frequency count |
+| 3 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | C# | Dictionary one pass |
 
 ---
 
@@ -54,6 +56,12 @@ LeetcodeSolutions/
 - If all counts balance to zero both strings use the exact same letters
 - Time complexity: **O(n)** — loop through both strings once
 - Space complexity: **O(n)** — store each unique character in the dictionary
+
+### #3 — Two Sum
+- **Strategy:** Dictionary to map each number to its index as we loop through once
+- For every number calculate its complement (target minus current) and check if already seen
+- Time complexity: **O(n)** — single pass through the array
+- Space complexity: **O(n)** — worst case store every element in the dictionary
 
 ---
 
