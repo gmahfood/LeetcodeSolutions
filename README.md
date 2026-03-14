@@ -30,7 +30,7 @@ LeetcodeSolutions/
 ### LeetCode
 | # | Problem | Difficulty | Language | Runtime | Memory | Notes |
 |---|---------|------------|----------|---------|--------|-------|
-| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 🟢 Easy | C# | 3ms (beats 72.34% | Dictionary lookup left to right |
+| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 🟢 Easy | C# | 3ms (beats 72.34% | 50.94MB (28.64%) | Dictionary lookup left to right |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | 🟢 Easy | C# | 0ms (beats 100%) | 46.53MB (beats 99.02%) | Two-pointer from end |
 
 ### NeetCode
