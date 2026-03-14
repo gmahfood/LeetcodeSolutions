@@ -1,7 +1,7 @@
 # LeetCode/NeetCode Solutions
 Personal collection of LeetCode problem solutions written in **C#**.
 
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-6-brightgreen)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-7-brightgreen)
 ![Language](https://img.shields.io/badge/Language-C%23-blue)
 ![Runtime](https://img.shields.io/badge/Best%20Runtime-0ms%20%7C%20Beats%20100%25-gold)
 
@@ -18,7 +18,8 @@ LeetcodeSolutions/
 │   ├── ValidAnagram.cs
 │   ├── TwoSum.cs
 │   ├── GroupAnagrams.cs
-│   └── TopKFrequent.cs
+│   ├── TopKFrequent.cs
+│   └── RomanToInteger.cs
 ```
 
 ---
@@ -38,6 +39,7 @@ LeetcodeSolutions/
 | 3 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | C# | Dictionary one pass |
 | 4 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | 🟡 Medium | C# | Dictionary sorted signature |
 | 5 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | 🟡 Medium | C# | Dictionary frequency count + sort |
+| 6 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 🟢 Easy | C# | Dictionary lookup left to right |
 
 ---
 
@@ -78,6 +80,13 @@ LeetcodeSolutions/
 - Sort dictionary keys by their count from highest to lowest and take top k
 - Time complexity: **O(n log n)** — sorting the dictionary keys
 - Space complexity: **O(n)** — storing every element in the dictionary
+
+### #6 — Roman to Integer
+- **Strategy:** Dictionary lookup with left to right traversal
+- If current value is less than next value subtract it, otherwise add it
+- Check next character exists before comparing to avoid index out of bounds
+- Time complexity: **O(n)** — single pass through the string
+- Space complexity: **O(1)** — dictionary is fixed size of 7 entries
 
 ---
 
