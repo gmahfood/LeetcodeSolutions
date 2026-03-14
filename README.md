@@ -11,15 +11,16 @@ Personal collection of LeetCode problem solutions written in **C#**.
 ```
 LeetcodeSolutions/
 ├── LeetCode/
-│   └── 88_MergeSortedArray/
-│       └── Solution88.cs
+│   ├── 88_MergeSortedArray/
+│   │   └── Solution88.cs
+│   └── 13_RomanToInteger/
+│       └── RomanToInteger.cs
 ├── neetcode/
 │   ├── ContainsDuplicate.cs
 │   ├── ValidAnagram.cs
 │   ├── TwoSum.cs
 │   ├── GroupAnagrams.cs
-│   ├── TopKFrequent.cs
-│   └── RomanToInteger.cs
+│   └── TopKFrequent.cs
 ```
 
 ---
@@ -29,6 +30,7 @@ LeetcodeSolutions/
 ### LeetCode
 | # | Problem | Difficulty | Language | Runtime | Memory | Notes |
 |---|---------|------------|----------|---------|--------|-------|
+| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 🟢 Easy | C# | 3ms (beats 72.34% | Dictionary lookup left to right |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | 🟢 Easy | C# | 0ms (beats 100%) | 46.53MB (beats 99.02%) | Two-pointer from end |
 
 ### NeetCode
@@ -39,11 +41,17 @@ LeetcodeSolutions/
 | 3 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | C# | Dictionary one pass |
 | 4 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | 🟡 Medium | C# | Dictionary sorted signature |
 | 5 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | 🟡 Medium | C# | Dictionary frequency count + sort |
-| 6 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 🟢 Easy | C# | Dictionary lookup left to right |
 
 ---
 
 ## Approach Highlights
+
+### #13 — Roman to Integer
+- **Strategy:** Dictionary lookup with left to right traversal
+- If current value is less than next value subtract it, otherwise add it
+- Check next character exists before comparing to avoid index out of bounds
+- Time complexity: **O(n)** — single pass through the string
+- Space complexity: **O(1)** — dictionary is fixed size of 7 entries
 
 ### #88 — Merge Sorted Array
 - **Strategy:** Two-pointer traversal starting from the **end** of both arrays
@@ -80,13 +88,6 @@ LeetcodeSolutions/
 - Sort dictionary keys by their count from highest to lowest and take top k
 - Time complexity: **O(n log n)** — sorting the dictionary keys
 - Space complexity: **O(n)** — storing every element in the dictionary
-
-### #6 — Roman to Integer
-- **Strategy:** Dictionary lookup with left to right traversal
-- If current value is less than next value subtract it, otherwise add it
-- Check next character exists before comparing to avoid index out of bounds
-- Time complexity: **O(n)** — single pass through the string
-- Space complexity: **O(1)** — dictionary is fixed size of 7 entries
 
 ---
 
