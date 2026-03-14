@@ -46,6 +46,8 @@ LeetcodeSolutions/
 
 ## Approach Highlights
 
+### LeetCode
+
 ### #13 — Roman to Integer
 - **Strategy:** Dictionary lookup with left to right traversal
 - If current value is less than next value subtract it, otherwise add it
@@ -58,6 +60,8 @@ LeetcodeSolutions/
 - Avoids overwriting unprocessed elements in `nums1`
 - Time complexity: **O(m + n)** — single pass
 - Space complexity: **O(1)** — in-place
+
+### NeetCode
 
 ### #1 — Contains Duplicate
 - **Strategy:** HashSet to track previously seen numbers
