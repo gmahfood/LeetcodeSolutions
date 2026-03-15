@@ -1,7 +1,7 @@
 # LeetCode/NeetCode Solutions
 Personal collection of LeetCode problem solutions written in **C#**.
 
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-7-brightgreen)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-8-brightgreen)
 ![Language](https://img.shields.io/badge/Language-C%23-blue)
 ![Runtime](https://img.shields.io/badge/Best%20Runtime-0ms%20%7C%20Beats%20100%25-gold)
 
@@ -20,7 +20,8 @@ LeetcodeSolutions/
 │   ├── ValidAnagram.cs
 │   ├── TwoSum.cs
 │   ├── GroupAnagrams.cs
-│   └── TopKFrequent.cs
+│   ├── TopKFrequent.cs
+│   └── EncodeDecodeStrings.cs
 ```
 
 ---
@@ -30,7 +31,7 @@ LeetcodeSolutions/
 ### LeetCode
 | # | Problem | Difficulty | Language | Runtime | Memory | Notes |
 |---|---------|------------|----------|---------|--------|-------|
-| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 🟢 Easy | C# | 3ms (beats 72.34% | 50.94MB (28.64%) | Dictionary lookup left to right |
+| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 🟢 Easy | C# | | | Dictionary lookup left to right |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | 🟢 Easy | C# | 0ms (beats 100%) | 46.53MB (beats 99.02%) | Two-pointer from end |
 
 ### NeetCode
@@ -41,12 +42,11 @@ LeetcodeSolutions/
 | 3 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | C# | Dictionary one pass |
 | 4 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | 🟡 Medium | C# | Dictionary sorted signature |
 | 5 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | 🟡 Medium | C# | Dictionary frequency count + sort |
+| 6 | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | 🟡 Medium | C# | Length prefix encoding |
 
 ---
 
 ## Approach Highlights
-
-### LeetCode
 
 ### #13 — Roman to Integer
 - **Strategy:** Dictionary lookup with left to right traversal
@@ -60,8 +60,6 @@ LeetcodeSolutions/
 - Avoids overwriting unprocessed elements in `nums1`
 - Time complexity: **O(m + n)** — single pass
 - Space complexity: **O(1)** — in-place
-
-### NeetCode
 
 ### #1 — Contains Duplicate
 - **Strategy:** HashSet to track previously seen numbers
@@ -93,6 +91,16 @@ LeetcodeSolutions/
 - Time complexity: **O(n log n)** — sorting the dictionary keys
 - Space complexity: **O(n)** — storing every element in the dictionary
 
+### #6 — Encode and Decode Strings
+- **Strategy:** Length prefix encoding — store word length and '#' before each word
+- Decode by finding '#' to get length, grabbing that many characters, moving position forward
+- Time complexity: **O(n)** — single pass for both encode and decode
+- Space complexity: **O(n)** — storing the encoded string and decoded list
+
+---
+
+*Profile: [gsr_mahfood on LeetCode](https://leetcode.com/u/gsr_mahfood/)*
+*Profile: [George Mahfood on NeetCode](https://neetcode.io/profile)*
 ---
 
 *Profile: [gsr_mahfood on LeetCode](https://leetcode.com/u/gsr_mahfood/)*
